@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Step3 = ({ prevStep, values, handleChange }) => {
+const Step3 = ({ prevStep, values, handleChange, redirect }) => {
     const submitForm = () => {
-        console.log(values);
+        console.table(values);
+        alert('You have been registered')
+        const red = () => redirect()
+        red()
     };
 
     return (
